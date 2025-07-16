@@ -1,4 +1,4 @@
-const pool = require('../db');
+const pool = require('../../db');
 
 
 const createEvent = async (req, res) => {
@@ -63,8 +63,6 @@ const getEventDetails = async (req, res) => {
   }
 };
 
-module.exports = {
-  createEvent,
-  getEventDetails
-};
+module.exports = createEvent;
+
 
