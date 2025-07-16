@@ -15,7 +15,7 @@ pool.query('SELECT NOW()', (err, result) => {
   if (err) {
     console.error('DB connection failed:', err);
   } else {
-    console.log('DB connected at:', result.rows[0].now);
+    console.log('DB connected');
   }
 });
 app.listen(port,()=>{
